@@ -5,25 +5,10 @@ body {
     margin: 0;
     padding: 0;
 }
-:root{
---preto:#000000;
- --marinho: #493d9e;
---amarelo-claro:#FFF2AF;
---roxo-claro:#B2A5FF;
-}
-<div class="menu-disciplina">
-<input type="checkbox" id="menu-toggle">
-<label for="menu-toggle" class="botao-disciplinas">Disciplinas</label>
-div class="lista-vertical">
-<a href"#"> Matemática</a>
-<a href"#"> portugues</a>
-<a href"#"> historia </a>
-<a href"#"> geografia</a>
- </div>
-</div>
+
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;  /* Agora o layout será de coluna */
     align-items: center;
     background-color: #d8d8ff; /* Tons pastéis de azul */
     padding: 20px;
@@ -41,11 +26,13 @@ div class="lista-vertical">
     border-radius: 5px;
     width: 200px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 15px; /* Espaçamento entre a pesquisa e o toggle */
 }
 
 .toggle-menu {
     display: flex;
     align-items: center;
+    margin-top: 20px; /* Espaçamento entre o campo de pesquisa e o toggle */
 }
 
 .toggle-menu label {
@@ -58,28 +45,30 @@ div class="lista-vertical">
     height: 20px;
 }
 
-/* Estilo do menu de matérias */
-.materias-menu {
+/* Lista de matérias */
+.materias-list {
     display: none;
     background-color: #e1e1ff;
     padding: 20px;
     margin-top: 20px;
+    width: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.materias-menu ul {
+.materias-list ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.materias-menu ul li {
+.materias-list ul li {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     color: #444;
 }
 
 /* Estilo quando o menu estiver visível */
-.materias-menu.show {
+.materias-list.show {
     display: block;
 }
+
