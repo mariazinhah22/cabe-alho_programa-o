@@ -1,47 +1,57 @@
-:root { --marinho: #ffe0ef;
-     --roxo-claro: #40f2ff; 
-     --amarelo-claro: #ffffff;
-      --preto: #000000;
-     } 
-     /* Estilos gerais */
-      body 
-      { font-family: Arial, sans-serif;
-         margin: 0;
-          padding: 0; 
-          background-color: #f4f4f4;
-           color: #ff00c8; 
-        } 
-        /* Estilos do cabeçalho */ 
-        header 
-        { display: flex;
-             width: 100%;
-              left: -24px;
-               background-color: var(--marinho);
-                padding: 1rem; 
-                position: relative; 
-                justify-content: space-between;
-                 align-items: center;
-                 } 
-                 .menu-disciplina 
-                 { width: 20%;
-                     display: inline-block;
-                     } 
-                     .menu-conteudo
-                      { display: flex; gap: 1rem; 
-                    } 
-                    .menu-conteudo a
-                     { color: var(--amarelo-claro);
-                         text-decoration: none;
-                          font-size: 1.2rem; 
-                        } 
-                        /* Estilos do botão de disciplinas */ 
-                        .botao-disciplinas
-                         { cursor: pointer;
-                             font-size: 2rem;
-                              background: none;
-                               background-color: var(--amarelo-claro);
-                                border: none;
-                                 padding: 1.05rem 1.5rem;
-                                  color: var(--roxo-claro);
-                                 } 
-                                 /* Esconder o checkbox .
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1f1;
+}
+header {
+    background: linear-gradient(135deg, #f8b195, #f67280, #c06c84);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.menu-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.menu {
+    position: relative;
+}
+.menu input {
+    display: none;
+}
+.menu label {
+    background-color: #ffdab9;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.menu label:hover {
+    background-color: #ffc3a0;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: none;
+    position: absolute;
+    background-color: #ffdab9;
+    border-radius: 10px;
+    width: 150px;
+}
+.menu ul li {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ffb6a3;
+}
+.menu ul li:last-child {
+    border-bottom: none;
+}
+.menu input:checked ~ ul {
+    display: block;
+}
