@@ -1,25 +1,29 @@
-<!-- Arquivo: index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site com Cabeçalho Pastel</title>
+    <title>Site com Múltiplos Menus</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        Meu Site com Tons Pastéis
+        <h1>Portal Educacional</h1>
+        <input type="text" placeholder="Pesquisar..." class="search-box">
     </header>
-    <div class="menu">
-        <input type="checkbox" id="toggle-menu">
-        <label for="toggle-menu">Matérias</label>
+    
+    <nav class="main-menu">
         <ul>
-            <li>História</li>
-            <li>Geografia</li>
-            <li>Português</li>
-            <li>Matemática</li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="geografia.html">Geografia</a></li>
+            <li><a href="portugues.html">Português</a></li>
+            <li><a href="matematica.html">Matemática</a></li>
         </ul>
-    </div>
+    </nav>
+    
+    <section>
+        <h2>Bem-vindo ao Portal Educacional</h2>
+        <p>Escolha uma disciplina no menu acima para acessar seus conteúdos.</p>
+    </section>
 </body>
 </html>
