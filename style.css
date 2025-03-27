@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 header {
-    background: linear-gradient(135deg, #e495f8, #72e2f6, #c06c84);
+    background: linear-gradient(135deg, #f8b195, #f67280, #c06c84);
     padding: 20px;
     color: white;
     font-size: 24px;
@@ -21,7 +21,7 @@ header {
     left: 20px;
     font-size: 24px;
     cursor: pointer;
-    background-color: #f1cba9;
+    background-color: #ffdab9;
     padding: 10px;
     border-radius: 5px;
 }
@@ -36,10 +36,14 @@ header {
     border-radius: 5px;
     border: none;
 }
+
+/* Estilos para o menu de disciplinas */
 .main-menu {
     background-color: #ffdab9;
     padding: 10px 0;
+    display: none;  /* Inicialmente escondido */
 }
+
 .main-menu ul {
     list-style: none;
     padding: 0;
@@ -48,9 +52,11 @@ header {
     justify-content: center;
     gap: 20px;
 }
+
 .main-menu ul li {
     display: inline;
 }
+
 .main-menu ul li a {
     text-decoration: none;
     color: #333;
@@ -60,6 +66,12 @@ header {
     transition: 0.3s;
     background-color: #ffc3a0;
 }
+
 .main-menu ul li a:hover {
     background-color: #ffb6a3;
+}
+
+/* Quando a checkbox estiver marcada, mostrar o menu */
+#menu-toggle:checked + .menu-button + .main-menu {
+    display: block;
 }
