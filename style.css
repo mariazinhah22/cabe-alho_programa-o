@@ -1,0 +1,47 @@
+:root { --marinho: #ffe0ef;
+     --roxo-claro: #40f2ff; 
+     --amarelo-claro: #ffffff;
+      --preto: #000000;
+     } 
+     /* Estilos gerais */
+      body 
+      { font-family: Arial, sans-serif;
+         margin: 0;
+          padding: 0; 
+          background-color: #f4f4f4;
+           color: #ff00c8; 
+        } 
+        /* Estilos do cabeçalho */ 
+        header 
+        { display: flex;
+             width: 100%;
+              left: -24px;
+               background-color: var(--marinho);
+                padding: 1rem; 
+                position: relative; 
+                justify-content: space-between;
+                 align-items: center;
+                 } 
+                 .menu-disciplina 
+                 { width: 20%;
+                     display: inline-block;
+                     } 
+                     .menu-conteudo
+                      { display: flex; gap: 1rem; 
+                    } 
+                    .menu-conteudo a
+                     { color: var(--amarelo-claro);
+                         text-decoration: none;
+                          font-size: 1.2rem; 
+                        } 
+                        /* Estilos do botão de disciplinas */ 
+                        .botao-disciplinas
+                         { cursor: pointer;
+                             font-size: 2rem;
+                              background: none;
+                               background-color: var(--amarelo-claro);
+                                border: none;
+                                 padding: 1.05rem 1.5rem;
+                                  color: var(--roxo-claro);
+                                 } 
+                                 /* Esconder o checkbox .
