@@ -12,13 +12,10 @@ header {
     font-size: 24px;
     font-weight: bold;
 }
-.menu-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
 .menu {
-    position: relative;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 .menu input {
     display: none;
@@ -30,6 +27,7 @@ header {
     cursor: pointer;
     font-size: 18px;
     transition: 0.3s;
+    display: inline-block;
 }
 .menu label:hover {
     background-color: #ffc3a0;
