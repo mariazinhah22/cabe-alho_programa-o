@@ -3,53 +3,47 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f1f1;
+    text-align: center;
 }
 header {
-    background: linear-gradient(135deg, #95e4f8, #f672bb, #6cc0c0);
+    background: linear-gradient(135deg, #f8b195, #f67280, #c06c84);
     padding: 20px;
-    text-align: center;
     color: white;
     font-size: 24px;
-    font-weight: bold;
+    position: relative;
 }
-.menu {
+.search-box {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
 }
-.menu input {
-    display: none;
+.main-menu {
+    background-color: #ffdab9;
+    padding: 10px 0;
 }
-.menu label {
-    background-color: #ffb9fb;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: 0.3s;
-    display: inline-block;
-}
-.menu label:hover {
-    background-color: #ffc3a0;
-}
-.menu ul {
+.main-menu ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
-    display: none;
-    position: absolute;
-    background-color: #ffdab9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.main-menu ul li {
+    display: inline;
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 15px;
     border-radius: 10px;
-    width: 150px;
+    transition: 0.3s;
+    background-color: #ffc3a0;
 }
-.menu ul li {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ffb6a3;
-}
-.menu ul li:last-child {
-    border-bottom: none;
-}
-.menu input:checked ~ ul {
-    display: block;
+.main-menu ul li a:hover {
+    background-color: #ffb6a3;
 }
