@@ -1,86 +1,81 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f1f1;
-    text-align: center;
 }
 
-/* Estilos do cabeçalho */
+/* Cabeçalho */
 header {
-    background: linear-gradient(135deg, #f8b195, #f67280, #c06c84);
-    padding: 20px;
+    background-color: #333;
     color: white;
-    font-size: 24px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Estilo do botão de menu */
-.menu-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    background-color: #ffdab9;
     padding: 10px;
-    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#menu-toggle {
+/* Estilo do input de pesquisa */
+.search-container input {
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Estilo do menu de disciplinas */
+.discipline-menu {
+    position: relative;
+}
+
+.discipline-menu input[type="checkbox"] {
     display: none;
 }
 
-/* Estilo do campo de pesquisa */
-.search-box {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 5px;
+.discipline-menu label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #444;
+    color: white;
     border-radius: 5px;
-    border: none;
+    font-size: 16px;
 }
 
-/* Estilos do menu de disciplinas */
-.main-menu {
-    background-color: #ffdab9;
-    padding: 10px 0;
-    display: none;  /* Inicialmente escondido */
-}
-
-.main-menu ul {
+.discipline-menu ul {
+    display: none;
+    position: absolute;
+    background-color: #444;
     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Menu em formato vertical */
-    gap: 20px;
-    align-items: center; /* Centraliza os itens */
+    padding: 10px;
+    top: 40px;
+    left: 0;
+    width: 200px;
+    border-radius: 5px;
 }
 
-.main-menu ul li {
-    display: inline-block;
-}
-
-.main-menu ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    transition: 0.3s;
-    background-color: #ffc3a0;
-}
-
-.main-menu ul li a:hover {
-    background-color: #ffb6a3;
-}
-
-/* Quando a checkbox estiver marcada, o menu será exibido */
-#menu-toggle:checked ~ .main-menu {
+.discipline-menu input[type="checkbox"]:checked + label + ul {
     display: block;
+}
+
+.discipline-menu ul li {
+    padding: 8px;
+    background-color: #555;
+    border-radius: 3px;
+    margin: 5px 0;
+    color: white;
+}
+
+.discipline-menu ul li:hover {
+    background-color: #666;
+}
+
+/* Estilo geral */
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container > div {
+    width: 48%;
 }

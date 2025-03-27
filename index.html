@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Educacional</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Site com Menu de Pesquisa e Disciplinas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <!-- Checkbox para exibir/ocultar o menu -->
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-button">☰</label>
-        <h1>Portal Educacional</h1>
-        <input type="text" placeholder="Pesquisar..." class="search-box">
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar..." />
+        </div>
+
+        <div class="discipline-menu">
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox">Disciplinas</label>
+            <ul>
+                <li>Matemática</li>
+                <li>Português</li>
+                <li>História</li>
+                <li>Geografia</li>
+            </ul>
+        </div>
     </header>
-    
-    <!-- Menu de disciplinas -->
-    <nav class="main-menu">
-        <ul>
-            <li><a href="historia.html">História</a></li>
-            <li><a href="geografia.html">Geografia</a></li>
-            <li><a href="portugues.html">Português</a></li>
-            <li><a href="matematica.html">Matemática</a></li>
-        </ul>
-    </nav>
-    
-    <section>
-        <h2>Bem-vindo ao Portal Educacional</h2>
-        <h3 uma disciplina no menu acima para acessar seus conteúdos.</p>
-    </section>
+
+    <main>
+        <div class="container">
+            <div>
+                <h1>Bem-vindo ao Site</h1>
+                <p>Este é um site exemplo com um menu de pesquisa e disciplinas.</p>
+            </div>
+            <div>
+                <h2>Conteúdo Principal</h2>
+                <p>Aqui você pode colocar o conteúdo principal do seu site.</p>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
