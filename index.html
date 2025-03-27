@@ -3,41 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site com Menu de Pesquisa e Disciplinas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Site com Menu Toggle</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <h1>Meu Site</h1>
-            </div>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo">
+            <h1>Site de Matérias</h1>
+        </div>
 
-            <div class="header-right">
-                <div class="search-container">
-                    <input type="text" placeholder="Pesquisar..." />
-                </div>
+        <!-- Menu de pesquisa -->
+        <div class="search">
+            <input type="text" id="search" placeholder="Pesquisar...">
+        </div>
 
-                <div class="discipline-menu">
-                    <button class="discipline-btn">Disciplinas</button>
-                    <ul class="discipline-list">
-                        <li>Matemática</li>
-                        <li>Português</li>
-                        <li>História</li>
-                        <li>Geografia</li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Checkbox para Toggle -->
+        <div class="toggle-menu">
+            <label for="toggle">Menu de Matérias</label>
+            <input type="checkbox" id="toggle">
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <h2>Bem-vindo ao nosso site!</h2>
-            <p>Explore os conteúdos disponíveis e descubra mais sobre as disciplinas.</p>
-        </div>
-    </main>
+    <!-- Menu de Matérias -->
+    <div class="materias-menu" id="materias-menu">
+        <ul>
+            <li>Português</li>
+            <li>Matemática</li>
+            <li>História</li>
+            <li>Geografia</li>
+        </ul>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 </html>

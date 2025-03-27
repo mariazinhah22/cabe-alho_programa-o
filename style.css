@@ -1,150 +1,70 @@
-/* Reseta alguns estilos padrões */
-* {
+/* Definindo a estética em tons pastéis */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Corpo da página */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-}
-
-/* Cabeçalho */
-header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header .header-content {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #d8d8ff; /* Tons pastéis de azul */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header .logo h1 {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    margin-right: 40px;
+.header .logo h1 {
+    margin: 0;
+    color: #5a5a9e; /* Tom pastel de roxo */
 }
 
-header .header-right {
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-menu {
     display: flex;
     align-items: center;
 }
 
-.search-container input {
-    padding: 8px 12px;
-    font-size: 14px;
-    border-radius: 25px;
-    border: 1px solid #bdc3c7;
-    margin-right: 20px;
-    width: 200px;
+.toggle-menu label {
+    margin-right: 10px;
+    color: #5a5a9e;
 }
 
-.discipline-menu {
-    position: relative;
+.toggle-menu input {
+    width: 20px;
+    height: 20px;
 }
 
-.discipline-btn {
-    background-color: #34495e;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.discipline-btn:hover {
-    background-color: #16a085;
-}
-
-.discipline-list {
+/* Estilo do menu de matérias */
+.materias-menu {
     display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #34495e;
-    list-style: none;
+    background-color: #e1e1ff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.materias-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.materias-menu ul li {
     padding: 10px;
-    border-radius: 8px;
-    width: 180px;
+    border-bottom: 1px solid #ccc;
+    color: #444;
 }
 
-.discipline-menu:hover .discipline-list {
+/* Estilo quando o menu estiver visível */
+.materias-menu.show {
     display: block;
-}
-
-.discipline-list li {
-    padding: 8px;
-    color: white;
-    border-radius: 5px;
-    background-color: #2c3e50;
-    margin: 5px 0;
-    cursor: pointer;
-}
-
-.discipline-list li:hover {
-    background-color: #16a085;
-}
-
-/* Estilo do conteúdo principal */
-main {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.container h2 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-.container p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #7f8c8d;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    header .header-content {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    header .logo h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .search-container input {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .header-right {
-        flex-direction: column;
-    }
-
-    .discipline-menu {
-        width: 100%;
-    }
 }
