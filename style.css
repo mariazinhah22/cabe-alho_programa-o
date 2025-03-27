@@ -1,4 +1,3 @@
-/* Definindo a estética em tons pastéis */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -8,16 +7,16 @@ body {
 
 .header {
     display: flex;
-    flex-direction: column;  /* Agora o layout será de coluna */
+    flex-direction: column;  
     align-items: center;
-    background-color: #d8d8ff; /* Tons pastéis de azul */
+    background-color: #d8d8ff; 
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header .logo h1 {
     margin: 0;
-    color: #5a5a9e; /* Tom pastel de roxo */
+    color: #5a5a9e; 
 }
 
 .search input {
@@ -26,13 +25,13 @@ body {
     border-radius: 5px;
     width: 200px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 15px; /* Espaçamento entre a pesquisa e o toggle */
+    margin-top: 15px; 
 }
 
 .toggle-menu {
     display: flex;
     align-items: center;
-    margin-top: 20px; /* Espaçamento entre o campo de pesquisa e o toggle */
+    margin-top: 20px;
 }
 
 .toggle-menu label {
@@ -45,7 +44,7 @@ body {
     height: 20px;
 }
 
-/* Lista de matérias */
+
 .materias-list {
     display: none;
     background-color: #e1e1ff;
@@ -67,7 +66,6 @@ body {
     color: #444;
 }
 
-/* Estilo quando o menu estiver visível */
 .materias-list.show {
     display: block;
 }
