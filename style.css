@@ -49,12 +49,13 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Agora será vertical */
     gap: 20px;
+    align-items: center; /* Centraliza os itens */
 }
 
 .main-menu ul li {
-    display: inline;
+    display: inline-block;
 }
 
 .main-menu ul li a {
@@ -71,7 +72,7 @@ header {
     background-color: #ffb6a3;
 }
 
-/* Quando a checkbox estiver marcada, mostrar o menu */
+/* Quando a checkbox estiver marcada, o menu será exibido */
 #menu-toggle:checked + .menu-button + .main-menu {
     display: block;
 }
