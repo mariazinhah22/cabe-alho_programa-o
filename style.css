@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 header {
-    background: linear-gradient(135deg, #f8b195, #f67280, #c06c84);
+    background: linear-gradient(135deg, #e495f8, #72e2f6, #c06c84);
     padding: 20px;
     color: white;
     font-size: 24px;
@@ -21,7 +21,7 @@ header {
     left: 20px;
     font-size: 24px;
     cursor: pointer;
-    background-color: #ffdab9;
+    background-color: #f1cba9;
     padding: 10px;
     border-radius: 5px;
 }
