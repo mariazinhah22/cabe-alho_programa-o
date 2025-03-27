@@ -5,7 +5,22 @@ body {
     margin: 0;
     padding: 0;
 }
-
+:root{
+--preto:#000000;
+ --marinho: #493d9e;
+--amarelo-claro:#FFF2AF;
+--roxo-claro:#B2A5FF;
+}
+<div class="menu-disciplina">
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="botao-disciplinas">Disciplinas</label>
+div class="lista-vertical">
+<a href"#"> Matemática</a>
+<a href"#"> portugues</a>
+<a href"#"> historia </a>
+<a href"#"> geografia</a>
+ </div>
+</div>
 .header {
     display: flex;
     justify-content: space-between;
