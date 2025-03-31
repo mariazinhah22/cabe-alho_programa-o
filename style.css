@@ -2,36 +2,55 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #FAF3E0; /* Tom pastel suave */
 }
 
 header {
-    background: #333;
-    color: white;
-    padding: 15px;
+    background: #F8D7DA; /* Tom pastel rosado */
+    color: #5A5A5A;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 15px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: #5A5A5A;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .search-box {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     padding: 5px;
     font-size: 16px;
+    border: 1px solid #D8A7B1;
+    border-radius: 5px;
+    background: #FFF;
 }
 
 .container {
     padding: 20px;
-}
-
-.filter-menu {
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-}
-
-.filter-menu label {
-    display: block;
-    margin: 5px 0;
+    color: #5A5A5A;
 }
