@@ -1,41 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site com Menu Toggle</title>
+    <title>Portfólio de Matérias</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-   >
-    <header class="header">
-        <div class="logo">
-            <h1>Site de Matérias</h1>
-        </div>
-
-       
-        <div class="search">
-            <input type="text" id="search" placeholder="Pesquisar...">
-        </div>
-
-       
-        <div class="toggle-menu">
-            <label for="toggle">Menu de Matérias</label>
-            <input type="checkbox" id="toggle">
-        </div>
-
-        <div class="materias-list" id="materias-list">
-            <ul>
-                <li>Português</li>
-                <li>Matemática</li>
-                <li>História</li>
-                <li>Geografia</li>
-            </ul>
-        </div>
+    <header>
+        <h1>Portfólio de Matérias</h1>
+        <input type="text" class="search-box" placeholder="Pesquisar...">
     </header>
-
-    <script src="script.js"></script>
+    
+    <div class="container">
+        <div class="filter-menu">
+            <h3>Filtrar por:</h3>
+            <label><input type="checkbox" name="filter" value="1"> Opção 1</label>
+            <label><input type="checkbox" name="filter" value="2"> Opção 2</label>
+            <label><input type="checkbox" name="filter" value="3"> Opção 3</label>
+        </div>
+        
+        <div class="projects">
+            <p>Aqui vão os projetos/matérias...</p>
+        </div>
+    </div>
 </body>
 </html>
+
 
