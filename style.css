@@ -1,56 +1,186 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #FAF3E0; /* Tom pastel suave */
+    box-sizing: border-box;
+}
+
+:root {
+    --bege: #F5F5DC;
+    --creme: #FFF8E7;
+    --marrom-claro: #D2B48C;
+    --areia: #FAEBD7;
+    --dourado-suave: #F5DEB3;
 }
 
 header {
-    background: #d7f8da; /* Tom pastel rosado */
-    color: #32b4c5;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
-
-.menu {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    gap: 15px;
+    width: 100%;
+    background-color: var(--marrom-claro);
+    padding: 25px;
+    position: relative;
+    justify-content: center;
 }
 
-.menu ul li {
-    display: inline;
+.menu-materias {
+    width: 15%;
+    display: inline-block;
 }
 
-.menu ul li a {
-    color: #a6c4e7;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.search-box {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ff0033;
+.botao-materias {
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    background-color: var(--creme);
+    border: none;
     border-radius: 5px;
-    background: #FFF;
+    padding: 15px 12px;
+    color: black;
 }
 
-.container {
+.menu button {
+    text-decoration: none;
+    background-color: var(--creme);
+    color: black;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 0px 8px;
+    border-radius: 5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.listinha {
+    display: none;
+    position: absolute;
+    background-color: var(--creme);
+    box-shadow: 0 2px 5px var(--dourado-suave);
+    min-width: 190px;
+    z-index: 1;
+    top: 100%;
+    border-radius: 5px;
+}
+
+.listinha a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+.listinha a:hover {
+    background-color: var(--areia);
+}
+
+#menu-toggle:checked ~ .listinha {
+    display: block;
+}
+
+#menu-toggle:checked + .botao-materias {
+    background-color: white;
+}
+
+.pesquisa {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.pesquisa input {
+    padding: 6px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+body {
+    background-color: var(--dourado-suave);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+ul {
+    padding: 0;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+p, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.comeco {
+    margin: 25px;
+}
+
+.comeco a {
+    color: #8B7355;
+    display: flex;
+    justify-content: left;
     padding: 20px;
-    color: #000000;
+}
+
+img {
+    display: flex;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.bagulho li {
+    list-style: circle;
+    margin: 20px;
+}
+
+.atividades {
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    background-color: var(--creme);
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.trabalhos {
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    background-color: var(--creme);
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.provas {
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    background-color: var(--creme);
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.rodape {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    background-color: var(--marrom-claro);
+}
+
+footer img {
+    width: 55%;
 }

@@ -1,27 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Matérias</title>
+    <title>Cabeçalho</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Português</a></li>
-                <li><a href="#">Matemática</a></li>
-                <li><a href="#">História</a></li>
-                <li><a href="#">Geografia</a></li>
-            </ul>
-        </nav>
-        <h1>Portfólio de Matérias</h1>
-        <input type="text" class="search-box" placeholder="Pesquisar...">
+        <div class="menu-materias">
+            <input type="checkbox" id="menu-toggle"> 
+            <label for="menu-toggle" class="botao-materias">Matérias</label> 
+            <div class="listinha">
+                <ul>
+                    <li><a href="portugues.html">Português</a></li>
+                    <li><a href="matematica.html">Matemática</a></li>
+                    <li><a href="quimica.html">Química</a></li>
+                    <li><a href="fisica.html">Física</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pesquisa">
+            <input type="text" placeholder="Pesquisar....">
+        </div>
+        <div class="menu">
+            <button><a href="#at">Tarefas de Casa</a></button>
+            <button><a href="#tra">Trabalho</a></button>
+            <button><a href="#pro">Prova</a></button>
+        </div>
     </header>
-    
-    <div class="container">
-        <p>CABEÇALHO DE PROGRAMAÇÃO</p>
-    </div>
+    <h1>Introdução</h1>
+    <p>Apresentamos as seguintes matérias, como as principais do autor que não tem criatividade</p>
+    <footer class="rodape">
+        <div>
+            <img src="./image.png" alt="cep">
+        </div>
+        <div>
+            <p>Colégio Estadual do Paraná</p>
+            <p>Av. João Gualberto, 250 - Centro</p>
+        </div>
+    </footer>
 </body>
 </html>
